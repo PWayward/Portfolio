@@ -36,10 +36,10 @@
             text-decoration: none;
 			font-family: myFont;
             margin: 0 50px;
-            transition: color 0.3s; /* Smooth transition for color change */
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #fbce0f; /* Highlight color on hover */
+            color: #fbce0f;
         }
         article {
 			display: absolute;
@@ -62,7 +62,7 @@
         <h1>PHILIP WOODWARD</h1>
     </header>
     <nav>
-		<a href="homepage.html">HOME</a>
+		<a href="index.html">HOME</a>
         <a href="gallery.html">GALLERY</a>
         <a href="contact.html">CONTACT</a>
         <a href="rates.html">RATES</a>
@@ -77,10 +77,8 @@
         &copy; 2024 Philip Woodward. All rights reserved.
     </footer>
     <script>
-        // Get the modal
         var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal
         var images = document.querySelectorAll(".gallery img");
         var modalImg = document.getElementById("expandedImg");
 
@@ -91,12 +89,10 @@
             });
         });
 
-        // Close the modal when clicking on the close button
         function closeModal() {
             modal.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";

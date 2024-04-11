@@ -42,10 +42,10 @@
             text-decoration: none;
 			font-family: myFont;
             margin: 0 50px;
-            transition: color 0.3s; /* Smooth transition for color change */
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #fbce0f; /* Highlight color on hover */
+            color: #fbce0f;
         }
 		article {
 			display: absolute;
@@ -136,12 +136,12 @@
         <h1>PHILIP WOODWARD</h1>
     </header>
     <nav>
-		<a href="homepage.html">HOME</a>
+		<a href="index.html">HOME</a>
         <a href="gallery.html">GALLERY</a>
         <a href="contact.html">CONTACT</a>
         <a href="rates.html">RATES</a>
     </nav>
-	<article>Need a Freelance Graphic Designer? I know a guy.</article>
+	<article>++ Need a Freelance Graphic Designer? I know a guy. ++</article>
     <div class="gallery">
 		
         <img src="IMG_0737.png" alt="album1">
@@ -158,7 +158,6 @@
 		<img src="IMG_0318.png" alt="philosophyalbum">
 		<img src="IMG_0604.jpeg" alt="dodalbum">
 		
-        <!-- Add more images as needed -->
     </div>
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -172,14 +171,13 @@
 	<h2>ADOBE FRESCO</h2>
 	<h2>PROCREATE</h2>
 	<h2>PROCREATE DREAMS</h2>
+	<article>++ 3D Printing Services will be avaliable SOON! ++</article>
     <footer>
         &copy; 2024 Philip Woodward. All rights reserved.
     </footer>
     <script>
-        // Get the modal
         var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal
         var images = document.querySelectorAll(".gallery img");
         var modalImg = document.getElementById("expandedImg");
         var slideIndex = 0;
@@ -192,17 +190,14 @@
             });
         });
 
-        // Close the modal when clicking on the close button
         function closeModal() {
             modal.style.display = "none";
         }
 
-        // Navigate to the previous or next image
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
 
-        // Display the specified slide
         function showSlides(n) {
             var slides = document.querySelectorAll(".gallery img");
             if (n >= slides.length) {

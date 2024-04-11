@@ -36,10 +36,10 @@
             text-decoration: none;
 			font-family: myFont;
             margin: 0 50px;
-            transition: color 0.3s; /* Smooth transition for color change */
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #fbce0f; /* Highlight color on hover */
+            color: #fbce0f;
         }
 		article {
 			display: absolute;
@@ -130,7 +130,7 @@
         <h1>PHILIP WOODWARD</h1>
     </header>
     <nav>
-		<a href="homepage.html">HOME</a>
+		<a href="index.html">HOME</a>
         <a href="gallery.html">GALLERY</a>
         <a href="contact.html">CONTACT</a>
         <a href="rates.html">RATES</a>
@@ -165,8 +165,6 @@
 		<img src="IMG_0464.jpeg" alt="emptywindowsalbum">
 		<img src="IMG_0604.jpeg" alt="dodalbum">
 		
-		
-        <!-- Add more images as needed -->
     </div>
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -184,10 +182,8 @@
         &copy; 2024 Philip Woodward. All rights reserved.
     </footer>
     <script>
-        // Get the modal
         var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal
         var images = document.querySelectorAll(".gallery img");
         var modalImg = document.getElementById("expandedImg");
         var slideIndex = 0;
@@ -200,17 +196,14 @@
             });
         });
 
-        // Close the modal when clicking on the close button
         function closeModal() {
             modal.style.display = "none";
         }
 
-        // Navigate to the previous or next image
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
 
-        // Display the specified slide
         function showSlides(n) {
             var slides = document.querySelectorAll(".gallery img");
             if (n >= slides.length) {
