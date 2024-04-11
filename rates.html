@@ -73,6 +73,31 @@
 			width: 100%;
 			height: auto;
 		}
+		.dropdown-container {
+            display: none;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid #81465d;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+            color: #fff;
+            background-color: #81465d;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #633d51;
+        }
         footer {
             text-align: center;
             padding: 20px 0;
@@ -94,6 +119,35 @@
 	<div>
 		<div class="container-wrapper">
 		<h1>RATES ARE HOURLY AND VARY BY COMPLEXITY</h1>
+		        <div class="dropdown-toggle" onclick="toggleDropdown()">Easy Commission Form</div>
+        <div class="dropdown-container" id="dropdownContainer">
+            <!-- Drop-down content for lolz-->
+            <form action="woodward_philip@live.com" method="post" enctype="text/plain">
+                <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="checkbox1"> 2D Simple Vector
+                </label>
+                <br>
+                <label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="checkbox2"> 2D Complex Vector
+                </label>
+                <br>
+				<label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="checkbox2"> 2D Animation
+                </label>
+                <br>
+                <label for="name">
+                    Name:
+                    <input type="text" id="name" name="name">
+                </label>
+                <br>
+                <label for="description">
+                    Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 		<article>+ 2D VECTOR/ PIXEL SIMPLE GRAPHICS: +</article>
 		<h2>$20HRLY</h2>
 		<div class="container">
@@ -109,9 +163,16 @@
 		<div class="container">
 			<iframe width="auto" height="315" src="https://www.youtube.com/embed/vrvFrZ4Fs4c?si=ObN72MJlnrWOFfqz" frameborder="0" allowfullscreen></iframe>
 		</div>
-	</div>
+		
+    </div>
     <footer>
         &copy; 2024 Philip Woodward. All rights reserved.
     </footer>
 </body>
 </html>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownContainer");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
