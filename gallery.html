@@ -36,7 +36,7 @@
             color: white;
             text-decoration: none;
 			font-family: myFont;
-            margin: 0 50px;
+            margin: 0 10px;
             transition: color 0.3s;
         }
         nav a:hover {
@@ -52,16 +52,16 @@
 		}
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
         }
         .gallery img {
             width: 100%;
             height: auto;
             display: block;
             cursor: pointer;
-			border: 5px solid #81465d;
+			border: 3px solid #81465d;
 			border-radius: 5px;
         }
         footer {
@@ -74,7 +74,7 @@
             display: none;
             position: fixed;
             z-index: 1;
-            padding-top: 100px;
+            padding-top: 50px;
             left: 0;
             top: 0;
             width: 100%;
@@ -85,9 +85,9 @@
         .modal-content {
             margin: auto;
             display: block;
-            width: 50%;
-            max-width: auto;
-            max-height: auto;
+            width: 80%;
+            max-width: 600px;
+            max-height: 80%;
             position: relative;
         }
         .modal-content img {
@@ -124,6 +124,25 @@
         .next {
             right: 20px;
         }
+		     @media only screen and (max-width: 600px) {
+            nav a {
+                margin: 0 5px; /* Further reduced margin for smaller screens */
+            }
+
+            .modal-content {
+                width: 95%; /* Further reduced modal width for smaller screens */
+            }
+
+            .close {
+                top: 10px; /* Further adjusted top position for close button */
+                right: 10px; /* Further adjusted right position for close button */
+                font-size: 20px; /* Further reduced font size for close button */
+            }
+
+            .prev, .next {
+                font-size: 16px; /* Further reduced font size for navigation buttons */
+                padding: 3px; /* Further reduced padding for navigation buttons */
+            }
     </style>
 </head>
 <body>
