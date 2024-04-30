@@ -43,7 +43,7 @@
             color: white;
             text-decoration: none;
 			font-family: myFont;
-            margin: 0 50px;
+            margin: 0 10px;
             transition: color 0.3s;
         }
         nav a:hover {
@@ -64,10 +64,10 @@
 			align-items: center;
 		}
 		.container {
-			max-width: 20%;
-			border: 10px solid #81465d;
+			max-width: 90%;
+			border: 5px solid #81465d;
 			border-radius: 5px;
-			margin: 10px 80px;
+			margin: 10px 10px;
 		}
 		.container img,
 		.container iframe {
@@ -76,9 +76,9 @@
 		}
 		.dropdown-container {
             display: none;
-            width: 100%;
+            width: 90%;
             max-width: 500px;
-            margin: 0 auto;
+            margin: 10px 5% auto;
             padding: 10px;
             background-color: #fff;
             border: 2px solid #81465d;
@@ -104,6 +104,16 @@
             padding: 20px 0;
             background-color: #333;
             color: white;
+        }
+		@media only screen and (max-width: 600px) {
+            .container {
+                max-width: 95%;
+                margin: 10px 2.5%;
+            }
+            .dropdown-container {
+                width: 95%;
+                margin: 10px 2.5%;
+            }
         }
     </style>
 </head>
@@ -162,9 +172,8 @@
 		<article>+ 2D VECTOR/ PIXEL ANIMATIONS (ONLY): +</article>
 		<h2>$35HRLY</h2>
 		<div class="container">
-			<iframe width="auto" height="315" src="https://www.youtube.com/embed/vrvFrZ4Fs4c?si=ObN72MJlnrWOFfqz" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/vrvFrZ4Fs4c?si=ObN72MJlnrWOFfqz" frameborder="0" allowfullscreen style="max-width: 100%;"></iframe>
 		</div>
-		
     </div>
     <footer>
         &copy; 2024 Philip Woodward. All rights reserved.
